@@ -8,7 +8,7 @@ parameters:
   - name: bootstrapperUrl
     type: string
   - name: runSettingsURI
-    type: string
+    type: string 
   - name: DartLabEnvironment
     type: string
   - name: condition
@@ -16,7 +16,7 @@ parameters:
   - name: variables
     type: object
   - name: testExecutionJobTimeoutInMinutes
-    type: number
+    type: number    
   - name: testMachineCleanUpStrategy
     type: string
     default: delete
@@ -40,6 +40,7 @@ stages:
         - ${{parameters.variables}}
       runSettingsURI: ${{parameters.runSettingsURI}}
       visualStudioBootstrapperURI: $(bootstrapperUrl)
+      baseVisualStudioBootstrapperURI: $(bootstrapperUrl)
       testLabPoolName: VS-Platform
       dartLabEnvironment: ${{parameters.DartLabEnvironment}}
       visualStudioSigning: Test
