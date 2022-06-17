@@ -28,7 +28,7 @@ parameters:
     default: false
 
 stages:
-  - template: stages\visual-studio\single-runsettings.yml@DartLabTemplates
+  - template: stages\visual-studio\build-to-build-upgrade\single-runsettings.yml@DartLabTemplates
     parameters:
       name: ${{parameters.stageName}}
       displayName: ${{parameters.stageDisplayName}}
