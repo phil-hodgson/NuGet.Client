@@ -298,6 +298,8 @@ steps:
     vsMajorVersion: "$(VsTargetMajorVersion)"
     manifests: '$(Build.Repository.LocalPath)\artifacts\VS15\Microsoft.VisualStudio.NuGet.Core.vsman'
     outputFolder: '$(Build.Repository.LocalPath)\artifacts\VS15'
+    bootstrapperCoreVersion: 3.4.4-g4cae2ef8
+    bootstrapperExternalVersion: 3.4.4-g4cae2ef8
   condition: "and(succeeded(), eq(variables['BuildRTM'], 'false'))"
 
 - task: PublishBuildArtifacts@1
