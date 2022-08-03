@@ -27,12 +27,15 @@ using Task = System.Threading.Tasks.Task;
 
 namespace NuGet.PackageManagement.UI.Test.Models
 {
-    [Collection(MockedVS.Collection)]
     public abstract class V3DetailControlModelTestBase : IClassFixture<V3PackageSearchMetadataFixture>
     {
         protected readonly V3PackageSearchMetadataFixture _testData;
         protected readonly PackageItemViewModel _testViewModel;
 
+        public V3DetailControlModelTestBase(GlobalServiceProvider sp)
+        {
+            
+        }
         public V3DetailControlModelTestBase(V3PackageSearchMetadataFixture testData, GlobalServiceProvider sp)
         {
             sp.Reset();
@@ -80,8 +83,8 @@ namespace NuGet.PackageManagement.UI.Test.Models
     {
         private readonly Dictionary<Type, Task<object>> _services = new Dictionary<Type, Task<object>>(TypeEquivalenceComparer.Instance);
         private readonly PackageDetailControlModel _testInstance;
-    public V3PackageDetailControlModelTests(V3PackageSearchMetadataFixture testData, GlobalServiceProvider sp)
-            : base(testData, sp)
+    public V3PackageDetailControlModelTests(GlobalServiceProvider sp)
+            : base(new V3PackageSearchMetadataFixture(), sp)
         {
             var solMgr = new Mock<INuGetSolutionManagerService>();
 
@@ -1248,6 +1251,7 @@ namespace NuGet.PackageManagement.UI.Test.Models
         }
     }
 
+    [Collection(MockedVS.Collection)]
     public class V3PackageSolutionDetailControlModelTests : V3DetailControlModelTestBase, IAsyncServiceProvider
     {
         private PackageSolutionDetailControlModel _testInstance;
