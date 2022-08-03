@@ -5,7 +5,7 @@ using System.Threading;
 namespace NuGet.CommandLine
 {
     /// <summary>
-    /// A wrapper for string resources located at NuGetResources.resx 
+    /// A wrapper for string resources located at NuGetResources.resx
     /// </summary>
     internal static class LocalizedResourceManager
     {
