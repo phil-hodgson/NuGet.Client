@@ -18,6 +18,11 @@ namespace NuGet.CommandLine
                 throw new ArgumentNullException(nameof(resourceType));
             }
 
+            if (resourceNames == null)
+            {
+                throw new ArgumentNullException(nameof(resourceNames));
+            }
+
             if (_cachedManagers == null)
             {
                 _cachedManagers = new Dictionary<Type, ResourceManager>();
@@ -47,9 +52,7 @@ namespace NuGet.CommandLine
             var builder = new StringBuilder();
             foreach (var resource in resourceNames.Split(';'))
             {
-                var culture = LocalizedResourceManager.GetLanguageName();
-                string value = resourceManager.GetString(resource + '_' + culture, CultureInfo.InvariantCulture) ??
-                    resourceManager.GetString(resource, CultureInfo.InvariantCulture);
+                string value = LocalizedResourceManager.GetString(resource);
                 if (String.IsNullOrEmpty(value))
                 {
                     throw new InvalidOperationException(
