@@ -49,6 +49,8 @@ namespace NuGet.PackageManagement.UI
 
                 _projectView.InstallButtonClicked -= ProjectInstallButtonClicked;
                 _projectView.UninstallButtonClicked -= ProjectUninstallButtonClicked;
+
+                _solutionView.Control = Control;
             }
             else
             {
@@ -57,9 +59,9 @@ namespace NuGet.PackageManagement.UI
 
                 _solutionView.InstallButtonClicked -= SolutionInstallButtonClicked;
                 _solutionView.UninstallButtonClicked -= SolutionUninstallButtonClicked;
+
+                _projectView.Control = Control;
             }
-            _solutionView.Control = Control;
-            _projectView.Control = Control;
         }
 
         /// <summary>
