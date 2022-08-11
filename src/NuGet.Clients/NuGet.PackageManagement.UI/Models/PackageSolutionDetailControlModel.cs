@@ -449,7 +449,11 @@ namespace NuGet.PackageManagement.UI
             CanUninstall = Projects.Any(project => project.IsSelected && project.InstalledVersion != null && !project.AutoReferenced);
 
             bool isPackageMapped = true;
-            if (IsPackageSourceMappingEnabled == true && _selectMappingCheckBoxState == false && IsExistingMappingsNull == true && IsAllSourcesSelected == false)
+            if (IsPackageSourceMappingEnabled == true && _selectMappingCheckBoxState == false && IsExistingMappingsNull == true)
+            {
+                isPackageMapped = false;
+            }
+            if (IsAllSourcesSelected == true && IsPackageSourceMappingEnabled)
             {
                 isPackageMapped = false;
             }

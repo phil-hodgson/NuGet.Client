@@ -452,15 +452,6 @@
       <CheckBox Grid.Row="4" Grid.Column="2" Name="newMapping" Margin="0,0,0,10" IsChecked="{Binding SelectMappingCheckBoxState}">Add mapping to selected source</CheckBox>
       <TextBlock Grid.Row="5" Grid.Column="2" Name="existingMappings" Margin="0,0,0,10">Package already has mappings</TextBlock>
 
-      <!--<TextBlock
-        Grid.Row="6"
-        Grid.Column="2"
-        Name="settingsLink">
-        <Hyperlink Command="SettingsButtonClicked">
-          <Run Text="Package Source Mapping Settings"/>
-        </Hyperlink>
-      </TextBlock>-->
-
       <Button
         Grid.Row="6"
         Grid.Column="2"

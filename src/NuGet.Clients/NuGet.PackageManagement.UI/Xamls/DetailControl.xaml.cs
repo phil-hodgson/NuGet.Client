@@ -59,6 +59,7 @@ namespace NuGet.PackageManagement.UI
                 _solutionView.UninstallButtonClicked -= SolutionUninstallButtonClicked;
             }
             _solutionView.Control = Control;
+            _projectView.Control = Control;
         }
 
         /// <summary>

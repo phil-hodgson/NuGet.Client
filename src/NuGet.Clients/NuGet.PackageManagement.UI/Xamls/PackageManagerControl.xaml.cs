@@ -1043,7 +1043,6 @@ namespace NuGet.PackageManagement.UI
             IReadOnlyCollection<PackageSourceContextInfo> packageSources = SelectedSource.PackageSources;
             int selectedIndex = _packageList.SelectedIndex;
             int recommendedCount = _packageList.PackageItems.Where(item => item.Recommended == true).Count();
-
             if (selectedItem == null)
             {
                 _packageDetail.Visibility = Visibility.Hidden;
@@ -1065,6 +1064,7 @@ namespace NuGet.PackageManagement.UI
                     return;
                 }
             }
+            _packageDetail._projectView.PackageDetailControlModel.UpdateIsInstallorUpdateButtonEnabled();
             //Shows text if there are already mappings to selected package
             PackageSourceMapping packageSourceMapping = PackageSourceMapping.GetPackageSourceMapping(Settings);
             string packageID = _detailModel.Id;
@@ -1075,11 +1075,13 @@ namespace NuGet.PackageManagement.UI
             if (configuredSources == null)
             {
                 _packageDetail._solutionView.existingMappings.Visibility = Visibility.Collapsed;
+                _packageDetail._projectView.existingMappings.Visibility = Visibility.Collapsed;
                 _detailModel.IsExistingMappingsNull = true;
             }
             else
             {
                 _packageDetail._solutionView.existingMappings.Visibility = Visibility.Visible;
+                _packageDetail._projectView.existingMappings.Visibility = Visibility.Visible;
                 _detailModel.IsExistingMappingsNull = false;
             }
             //Hides mapping panel if All sources selected
@@ -1089,12 +1091,21 @@ namespace NuGet.PackageManagement.UI
                 _packageDetail._solutionView.newMapping.Visibility = Visibility.Collapsed;
                 _packageDetail._solutionView.existingMappings.Visibility = Visibility.Collapsed;
                 _packageDetail._solutionView.settingsLink.Visibility = Visibility.Collapsed;
+
+                _packageDetail._projectView.mappingHeader.Visibility = Visibility.Collapsed;
+                _packageDetail._projectView.newMapping.Visibility = Visibility.Collapsed;
+                _packageDetail._projectView.existingMappings.Visibility = Visibility.Collapsed;
+                _packageDetail._projectView.settingsLink.Visibility = Visibility.Collapsed;
             }
             else
             {
                 _packageDetail._solutionView.mappingHeader.Visibility = Visibility.Visible;
                 _packageDetail._solutionView.newMapping.Visibility = Visibility.Visible;
                 _packageDetail._solutionView.settingsLink.Visibility = Visibility.Visible;
+
+                _packageDetail._projectView.mappingHeader.Visibility = Visibility.Visible;
+                _packageDetail._projectView.newMapping.Visibility = Visibility.Visible;
+                _packageDetail._projectView.settingsLink.Visibility = Visibility.Visible;
             }
         }
 
