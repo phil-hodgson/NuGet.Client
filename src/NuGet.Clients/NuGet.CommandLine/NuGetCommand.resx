@@ -5611,8 +5611,8 @@ nuget trusted-signers Remove -Name TrustedRepo</value>
     <value>Provides the ability to manage list of client certificates located in NuGet.config files</value>
   </data>
   <data name="ClientCertificatesCommandUsageSummary" xml:space="preserve">
-<value>&lt;List|Add|Update|Remove&gt; [options]</value>
-</data>
+    <value>&lt;List|Add|Update|Remove&gt; [options]</value>
+  </data>
   <data name="ClientCertificatesCommandUsageExamples" xml:space="preserve">
     <value>nuget client-certs Add -PackageSource Foo -Path .\MyCertificate.pfx
 
