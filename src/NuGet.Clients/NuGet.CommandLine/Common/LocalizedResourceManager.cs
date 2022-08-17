@@ -1,3 +1,7 @@
+// Copyright (c) .NET Foundation. All rights reserved.
+// Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
+
+using System;
 using System.Globalization;
 using System.Resources;
 using System.Threading;
@@ -13,14 +17,28 @@ namespace NuGet.CommandLine
 
         public static string GetString(string resourceName)
         {
-            string localizedString = _resourceManager.GetString(resourceName, Thread.CurrentThread.CurrentCulture);
+            return GetString(resourceName, _resourceManager);
+        }
 
-            if (string.IsNullOrEmpty(localizedString))
+        internal static string GetString(string resourceName, ResourceManager resourceManager)
+        {
+            if (string.IsNullOrEmpty(resourceName))
+            {
+                throw new ArgumentException("cannot be null or empty", nameof(resourceName));
+            }
+            if (resourceManager == null)
+            {
+                throw new ArgumentNullException(nameof(resourceManager));
+            }
+
+            string localizedString = resourceManager.GetString(resourceName, Thread.CurrentThread.CurrentUICulture);
+
+            if (localizedString == null) // can be empty if .resx has an empty string
             {
                 // Fallback on existing method
-                var culture = GetLanguageName();
-                return _resourceManager.GetString(resourceName + '_' + culture, CultureInfo.InvariantCulture) ??
-                       _resourceManager.GetString(resourceName, CultureInfo.InvariantCulture);
+                string culture = GetLanguageName();
+                return resourceManager.GetString(resourceName + '_' + culture, CultureInfo.InvariantCulture) ??
+                       resourceManager.GetString(resourceName, CultureInfo.InvariantCulture);
             }
 
             return localizedString;
