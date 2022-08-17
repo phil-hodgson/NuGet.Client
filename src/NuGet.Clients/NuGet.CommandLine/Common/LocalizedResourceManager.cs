@@ -24,7 +24,7 @@ namespace NuGet.CommandLine
         {
             if (string.IsNullOrEmpty(resourceName))
             {
-                throw new ArgumentException("cannot be null or empty", nameof(resourceName));
+                throw new ArgumentException(NuGetResources.Argument_Cannot_Be_Null_Or_Empty, nameof(resourceName));
             }
             if (resourceManager == null)
             {
