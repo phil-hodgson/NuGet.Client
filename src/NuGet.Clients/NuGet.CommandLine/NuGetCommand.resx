@@ -250,6 +250,13 @@ nuget list -verbose -allversions</value>
   <data name="ListCommandVerboseListDescription" xml:space="preserve">
     <value>Displays a detailed list of information for each package.</value>
   </data>
+  <data name="Option_NonInteractive" xml:space="preserve">
+    <value>Do not prompt for user input or confirmations.</value>
+  </data>
+  <data name="Option_Verbosity" xml:space="preserve">
+    <value>Display this amount of details in the output: normal, quiet, detailed.</value>
+    <comment>Please don't localize "normal", "quiet", "detailed"</comment>
+  </data>
   <data name="PackageCommandBasePathDescription" xml:space="preserve">
     <value>The base path of the files defined in the nuspec file.</value>
   </data>
@@ -481,6 +488,9 @@ nuget update -Self</value>
   </data>
   <data name="InstallCommandSolutionDirectory" xml:space="preserve">
     <value>Solution root for package restore.</value>
+  </data>
+  <data name="Option_ConfigFile" xml:space="preserve">
+    <value>The NuGet configuration file. If specified, only the settings from this file will be used. If not specified, the hierarchy of configuration files from the current directory will be used. To learn more about NuGet configuration go to https://docs.microsoft.com/en-us/nuget/consume-packages/configuring-nuget-behavior.</value>
   </data>
   <data name="CommandDisableParallelProcessing" xml:space="preserve">
     <value>Disable parallel processing of packages for this command.</value>
@@ -829,6 +839,9 @@ nuget locals global-packages -list</value>
   </data>
   <data name="PackageCommandSuffixDescription" xml:space="preserve">
     <value>Appends a pre-release suffix to the internally generated version number.</value>
+  </data>
+  <data name="Option_ForceEnglishOutput" xml:space="preserve">
+    <value>Forces the application to run using an invariant, English-based culture.</value>
   </data>
   <data name="RestoreCommandUsageExamples" xml:space="preserve">
     <value>nuget restore MySolution.sln</value>

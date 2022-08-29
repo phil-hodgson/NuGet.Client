@@ -1147,6 +1147,42 @@ namespace NuGet.CommandLine {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The NuGet configuration file. If specified, only the settings from this file will be used. If not specified, the hierarchy of configuration files from the current directory will be used. To learn more about NuGet configuration go to https://docs.microsoft.com/en-us/nuget/consume-packages/configuring-nuget-behavior..
+        /// </summary>
+        internal static string Option_ConfigFile {
+            get {
+                return ResourceManager.GetString("Option_ConfigFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Forces the application to run using an invariant, English-based culture..
+        /// </summary>
+        internal static string Option_ForceEnglishOutput {
+            get {
+                return ResourceManager.GetString("Option_ForceEnglishOutput", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Do not prompt for user input or confirmations..
+        /// </summary>
+        internal static string Option_NonInteractive {
+            get {
+                return ResourceManager.GetString("Option_NonInteractive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Display this amount of details in the output: normal, quiet, detailed..
+        /// </summary>
+        internal static string Option_Verbosity {
+            get {
+                return ResourceManager.GetString("Option_Verbosity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The base path of the files defined in the nuspec file..
         /// </summary>
         internal static string PackageCommandBasePathDescription {

@@ -61,6 +61,33 @@ namespace NuGet.CommandLine {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Package &apos;{0}&apos; already exists at feed &apos;{1}&apos; and is invalid..
+        /// </summary>
+        public static string AddCommand_ExistingPackageInvalid {
+            get {
+                return ResourceManager.GetString("AddCommand_ExistingPackageInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Package &apos;{0}&apos; already exists at feed &apos;{1}&apos;..
+        /// </summary>
+        public static string AddCommand_PackageAlreadyExists {
+            get {
+                return ResourceManager.GetString("AddCommand_PackageAlreadyExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &apos;-Source&apos; switch is not provided. nupkg gets added to the &apos;Source&apos; and is mandatory..
+        /// </summary>
+        public static string AddCommand_SourceNotProvided {
+            get {
+                return ResourceManager.GetString("AddCommand_SourceNotProvided", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add file &apos;{0}&apos; to package as &apos;{1}&apos;.
         /// </summary>
         public static string AddFileToPackage {
@@ -115,6 +142,15 @@ namespace NuGet.CommandLine {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to WARNING: {0}.
+        /// </summary>
+        public static string CommandLine_Warning {
+            get {
+                return ResourceManager.GetString("CommandLine_Warning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Key &apos;{0}&apos; not found..
         /// </summary>
         public static string ConfigCommandKeyNotFound {
@@ -138,6 +174,69 @@ namespace NuGet.CommandLine {
         public static string ConsoleConfirmMessageAccept {
             get {
                 return ResourceManager.GetString("ConsoleConfirmMessageAccept", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please provide password for: {0}.
+        /// </summary>
+        public static string ConsolePasswordProvider_DisplayFile {
+            get {
+                return ResourceManager.GetString("ConsolePasswordProvider_DisplayFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password: .
+        /// </summary>
+        public static string ConsolePasswordProvider_PromptForPassword {
+            get {
+                return ResourceManager.GetString("ConsolePasswordProvider_PromptForPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The remote server indicated that the previous request was forbidden. Please provide credentials for: {0}.
+        /// </summary>
+        public static string Credentials_ForbiddenCredentials {
+            get {
+                return ResourceManager.GetString("Credentials_ForbiddenCredentials", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password: .
+        /// </summary>
+        public static string Credentials_Password {
+            get {
+                return ResourceManager.GetString("Credentials_Password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please provide proxy credentials:.
+        /// </summary>
+        public static string Credentials_ProxyCredentials {
+            get {
+                return ResourceManager.GetString("Credentials_ProxyCredentials", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please provide credentials for: {0}.
+        /// </summary>
+        public static string Credentials_RequestCredentials {
+            get {
+                return ResourceManager.GetString("Credentials_RequestCredentials", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to UserName: .
+        /// </summary>
+        public static string Credentials_UserName {
+            get {
+                return ResourceManager.GetString("Credentials_UserName", resourceCulture);
             }
         }
         
@@ -637,11 +736,191 @@ namespace NuGet.CommandLine {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The argument &apos;{0}&apos; is not expected..
+        /// </summary>
+        public static string Error_ArgumentNotExpected {
+            get {
+                return ResourceManager.GetString("Error_ArgumentNotExpected", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cannot find the specified version of msbuild: &apos;{0}&apos;.
+        /// </summary>
+        public static string Error_CannotFindMsbuild {
+            get {
+                return ResourceManager.GetString("Error_CannotFindMsbuild", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cannot get the GetAllProjectFileNamesMethod from type  Mono.XBuild.CommandLine.SolutionParser..
+        /// </summary>
+        public static string Error_CannotGetGetAllProjectFileNamesMethod {
+            get {
+                return ResourceManager.GetString("Error_CannotGetGetAllProjectFileNamesMethod", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cannot get type Mono.XBuild.CommandLine.SolutionParser..
+        /// </summary>
+        public static string Error_CannotGetXBuildSolutionParser {
+            get {
+                return ResourceManager.GetString("Error_CannotGetXBuildSolutionParser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MsBuild timeout out while trying to get project to project references, and NuGet.exe failed to kill the process..
+        /// </summary>
+        public static string Error_CannotKillMsBuild {
+            get {
+                return ResourceManager.GetString("Error_CannotKillMsBuild", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cannot load type Microsoft.Build.Construction.ProjectInSolution from Microsoft.Build.dll.
+        /// </summary>
+        public static string Error_CannotLoadTypeProjectInSolution {
+            get {
+                return ResourceManager.GetString("Error_CannotLoadTypeProjectInSolution", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cannot load type Microsoft.Build.Construction.SolutionParser from Microsoft.Build.dll.
+        /// </summary>
+        public static string Error_CannotLoadTypeSolutionParser {
+            get {
+                return ResourceManager.GetString("Error_CannotLoadTypeSolutionParser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cannot locate a solution file..
+        /// </summary>
+        public static string Error_CannotLocateSolutionFile {
+            get {
+                return ResourceManager.GetString("Error_CannotLocateSolutionFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cannot prompt for input in non-interactive mode..
+        /// </summary>
+        public static string Error_CannotPromptForInput {
+            get {
+                return ResourceManager.GetString("Error_CannotPromptForInput", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failed to create a temporary file while trying to get project to project references..
+        /// </summary>
+        public static string Error_FailedToCreateRandomFileForP2P {
+            get {
+                return ResourceManager.GetString("Error_FailedToCreateRandomFileForP2P", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid characters in one of the following path segments: &apos;{0}&apos;.
+        /// </summary>
+        public static string Error_InvalidCharactersInPathSegment {
+            get {
+                return ResourceManager.GetString("Error_InvalidCharactersInPathSegment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid MSBuild version specified: &apos;{0}&apos;.
+        /// </summary>
+        public static string Error_InvalidMsbuildVersion {
+            get {
+                return ResourceManager.GetString("Error_InvalidMsbuildVersion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid solution directory: &apos;{0}&apos;.
+        /// </summary>
+        public static string Error_InvalidSolutionDirectory {
+            get {
+                return ResourceManager.GetString("Error_InvalidSolutionDirectory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Source parameter was not specified..
+        /// </summary>
+        public static string Error_MissingSourceParameter {
+            get {
+                return ResourceManager.GetString("Error_MissingSourceParameter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MSBuild is not installed..
+        /// </summary>
+        public static string Error_MSBuildNotInstalled {
+            get {
+                return ResourceManager.GetString("Error_MSBuildNotInstalled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MsBuild timeout out while trying to get project to project references..
+        /// </summary>
+        public static string Error_MsBuildTimedOut {
+            get {
+                return ResourceManager.GetString("Error_MsBuildTimedOut", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This folder contains more than one solution file..
+        /// </summary>
+        public static string Error_MultipleSolutions {
+            get {
+                return ResourceManager.GetString("Error_MultipleSolutions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to project.json cannot contain multiple Target Frameworks..
+        /// </summary>
+        public static string Error_MultipleTargetFrameworks {
+            get {
+                return ResourceManager.GetString("Error_MultipleTargetFrameworks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to NuGet.exe file on path {0} needs to be unblocked after downloading..
         /// </summary>
         public static string Error_NuGetExeNeedsToBeUnblockedAfterDownloading {
             get {
                 return ResourceManager.GetString("Error_NuGetExeNeedsToBeUnblockedAfterDownloading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error parsing packages.config file at {0}: {1}.
+        /// </summary>
+        public static string Error_PackagesConfigParseError {
+            get {
+                return ResourceManager.GetString("Error_PackagesConfigParseError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error occurred when processing file &apos;{0}&apos;: {1}.
+        /// </summary>
+        public static string Error_ProcessingNuspecFile {
+            get {
+                return ResourceManager.GetString("Error_ProcessingNuspecFile", resourceCulture);
             }
         }
         
@@ -653,6 +932,78 @@ namespace NuGet.CommandLine {
         public static string Error_ProjectJson_Deprecated_And_Removed {
             get {
                 return ResourceManager.GetString("Error_ProjectJson_Deprecated_And_Removed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid input &apos;{0}&apos;. Provide the path of an msbuild solution file instead. Support for XProj and standalone project.json files has been removed, to continue working with legacy projects use NuGet 3.5.x from https://nuget.org/downloads.
+        /// </summary>
+        public static string Error_ProjectJsonNotAllowed {
+            get {
+                return ResourceManager.GetString("Error_ProjectJsonNotAllowed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Response file &apos;{0}&apos; does not exist.
+        /// </summary>
+        public static string Error_ResponseFileDoesNotExist {
+            get {
+                return ResourceManager.GetString("Error_ResponseFileDoesNotExist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid response file, &apos;@&apos; does not exist.
+        /// </summary>
+        public static string Error_ResponseFileInvalid {
+            get {
+                return ResourceManager.GetString("Error_ResponseFileInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No more than {0} nested response files are allowed.
+        /// </summary>
+        public static string Error_ResponseFileMaxRecursionDepth {
+            get {
+                return ResourceManager.GetString("Error_ResponseFileMaxRecursionDepth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Response file &apos;{0}&apos; cannot be empty.
+        /// </summary>
+        public static string Error_ResponseFileNullOrEmpty {
+            get {
+                return ResourceManager.GetString("Error_ResponseFileNullOrEmpty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Response file &apos;{0}&apos; cannot be larger than {1}mb.
+        /// </summary>
+        public static string Error_ResponseFileTooLarge {
+            get {
+                return ResourceManager.GetString("Error_ResponseFileTooLarge", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Property Settings is null..
+        /// </summary>
+        public static string Error_SettingsIsNull {
+            get {
+                return ResourceManager.GetString("Error_SettingsIsNull", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error parsing solution file at {0}: {1}.
+        /// </summary>
+        public static string Error_SolutionFileParseError {
+            get {
+                return ResourceManager.GetString("Error_SolutionFileParseError", resourceCulture);
             }
         }
         
@@ -774,6 +1125,60 @@ namespace NuGet.CommandLine {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The folder &apos;{0}&apos; does not contain an msbuild solution or packages.config file to restore..
+        /// </summary>
+        public static string Error_UnableToLocateRestoreTarget {
+            get {
+                return ResourceManager.GetString("Error_UnableToLocateRestoreTarget", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failed to find an msbuild solution, packages.config, or project.json file in the folder &apos;{0}&apos;..
+        /// </summary>
+        public static string Error_UnableToLocateRestoreTarget_Because {
+            get {
+                return ResourceManager.GetString("Error_UnableToLocateRestoreTarget_Because", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The action &apos;{0}&apos; is not recognized..
+        /// </summary>
+        public static string Error_UnknownAction {
+            get {
+                return ResourceManager.GetString("Error_UnknownAction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid value given for &apos;DependencyVersion&apos;: &quot;{0}&quot;..
+        /// </summary>
+        public static string Error_UnknownDependencyVersion {
+            get {
+                return ResourceManager.GetString("Error_UnknownDependencyVersion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This version of msbuild is not supported: &apos;{0}&apos;.
+        /// </summary>
+        public static string Error_UnsupportedMsbuild {
+            get {
+                return ResourceManager.GetString("Error_UnsupportedMsbuild", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The `update -self` command only accepts one source as an argument. If the source option is not specified, the default NuGet source will be used..
+        /// </summary>
+        public static string Error_UpdateSelf_Source {
+            get {
+                return ResourceManager.GetString("Error_UpdateSelf_Source", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Failed to build &apos;{0}&apos;..
         /// </summary>
         public static string FailedToBuildProject {
@@ -842,6 +1247,24 @@ namespace NuGet.CommandLine {
         public static string HelpCommandForMoreInfo {
             get {
                 return ResourceManager.GetString("HelpCommandForMoreInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Feed &apos;{0}&apos; contains no packages..
+        /// </summary>
+        public static string InitCommand_FeedContainsNoPackages {
+            get {
+                return ResourceManager.GetString("InitCommand_FeedContainsNoPackages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Provided feed folder &apos;{0}&apos; is not found..
+        /// </summary>
+        public static string InitCommand_FeedIsNotFound {
+            get {
+                return ResourceManager.GetString("InitCommand_FeedIsNotFound", resourceCulture);
             }
         }
         
@@ -954,6 +1377,24 @@ namespace NuGet.CommandLine {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to License url: {0}.
+        /// </summary>
+        public static string ListCommand_LicenseUrl {
+            get {
+                return ResourceManager.GetString("ListCommand_LicenseUrl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This version of nuget.exe does not support listing packages from package source &apos;{0}&apos;..
+        /// </summary>
+        public static string ListCommand_ListNotSupported {
+            get {
+                return ResourceManager.GetString("ListCommand_ListNotSupported", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to No packages found..
         /// </summary>
         public static string ListCommandNoPackages {
@@ -968,6 +1409,87 @@ namespace NuGet.CommandLine {
         public static string LiveFeed {
             get {
                 return ResourceManager.GetString("LiveFeed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Local resources cleared..
+        /// </summary>
+        public static string LocalsCommand_ClearedSuccessful {
+            get {
+                return ResourceManager.GetString("LocalsCommand_ClearedSuccessful", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Clearing local resources failed: one or more errors occured..
+        /// </summary>
+        public static string LocalsCommand_ClearFailed {
+            get {
+                return ResourceManager.GetString("LocalsCommand_ClearFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Clearing NuGet cache: {0}.
+        /// </summary>
+        public static string LocalsCommand_ClearingNuGetCache {
+            get {
+                return ResourceManager.GetString("LocalsCommand_ClearingNuGetCache", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Clearing NuGet global packages cache: {0}.
+        /// </summary>
+        public static string LocalsCommand_ClearingNuGetGlobalPackagesCache {
+            get {
+                return ResourceManager.GetString("LocalsCommand_ClearingNuGetGlobalPackagesCache", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Clearing NuGet HTTP cache: {0}.
+        /// </summary>
+        public static string LocalsCommand_ClearingNuGetHttpCache {
+            get {
+                return ResourceManager.GetString("LocalsCommand_ClearingNuGetHttpCache", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failed to delete &apos;{0}&apos;..
+        /// </summary>
+        public static string LocalsCommand_FailedToDeletePath {
+            get {
+                return ResourceManager.GetString("LocalsCommand_FailedToDeletePath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An invalid local resource name was provided. Please provide one of the following values: http-cache, packages-cache, global-packages, all..
+        /// </summary>
+        public static string LocalsCommand_InvalidLocalResourceName {
+            get {
+                return ResourceManager.GetString("LocalsCommand_InvalidLocalResourceName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The location of local resource &apos;{0}&apos; is undefined..
+        /// </summary>
+        public static string LocalsCommand_LocalResourcePathNotSet {
+            get {
+                return ResourceManager.GetString("LocalsCommand_LocalResourcePathNotSet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Local resources partially cleared..
+        /// </summary>
+        public static string LocalsCommand_LocalsPartiallyCleared {
+            get {
+                return ResourceManager.GetString("LocalsCommand_LocalsPartiallyCleared", resourceCulture);
             }
         }
         
@@ -995,6 +1517,15 @@ namespace NuGet.CommandLine {
         public static string MSBuildAutoDetection {
             get {
                 return ResourceManager.GetString("MSBuildAutoDetection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MSBuild auto-detection: using msbuild version &apos;{0}&apos; from &apos;{1}&apos;. Use option -MSBuildVersion to force nuget to use a specific version of MSBuild..
+        /// </summary>
+        public static string MSBuildAutoDetection_Verbose {
+            get {
+                return ResourceManager.GetString("MSBuildAutoDetection_Verbose", resourceCulture);
             }
         }
         
@@ -1179,11 +1710,38 @@ namespace NuGet.CommandLine {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &apos;{0}&apos; is not a valid nupkg file..
+        /// </summary>
+        public static string NupkgPath_InvalidNupkg {
+            get {
+                return ResourceManager.GetString("NupkgPath_InvalidNupkg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Provided Nupkg file &apos;{0}&apos; is not found..
+        /// </summary>
+        public static string NupkgPath_NotFound {
+            get {
+                return ResourceManager.GetString("NupkgPath_NotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to NuGet official package source.
         /// </summary>
         public static string OfficialPackageSourceName {
             get {
                 return ResourceManager.GetString("OfficialPackageSourceName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Option &apos;Verbose&apos; has been deprecated. Use &apos;Verbosity&apos; instead..
+        /// </summary>
+        public static string Option_VerboseDeprecated {
+            get {
+                return ResourceManager.GetString("Option_VerboseDeprecated", resourceCulture);
             }
         }
         
@@ -1355,6 +1913,33 @@ namespace NuGet.CommandLine {
         public static string PackagingFilesFromOutputPath {
             get {
                 return ResourceManager.GetString("PackagingFilesFromOutputPath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &apos;{0}&apos; is not a valid path..
+        /// </summary>
+        public static string Path_Invalid {
+            get {
+                return ResourceManager.GetString("Path_Invalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &apos;{0}&apos; should be a local path or a UNC share path..
+        /// </summary>
+        public static string Path_Invalid_NotFileNotUnc {
+            get {
+                return ResourceManager.GetString("Path_Invalid_NotFileNotUnc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to `project.json` pack is deprecated. Please consider migrating &apos;{0}&apos; to `PackageReference` and using the pack targets..
+        /// </summary>
+        public static string ProjectJsonPack_Deprecated {
+            get {
+                return ResourceManager.GetString("ProjectJsonPack_Deprecated", resourceCulture);
             }
         }
         
@@ -1747,11 +2332,29 @@ namespace NuGet.CommandLine {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Using credentials from config. UserName: {0}.
+        /// </summary>
+        public static string SettingsCredentials_UsingSavedCredentials {
+            get {
+                return ResourceManager.GetString("SettingsCredentials_UsingSavedCredentials", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Nothing to do. None of the projects in this solution specify any packages for NuGet to restore..
         /// </summary>
         public static string SolutionRestoreCommandNoPackagesConfigOrProjectJson {
             get {
                 return ResourceManager.GetString("SolutionRestoreCommandNoPackagesConfigOrProjectJson", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Source &apos;{0}&apos; is not found..
+        /// </summary>
+        public static string Source_NotFound {
+            get {
+                return ResourceManager.GetString("Source_NotFound", resourceCulture);
             }
         }
         
@@ -2080,6 +2683,51 @@ namespace NuGet.CommandLine {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The value &quot;{0}&quot; for {1} is a sample value and should be removed..
+        /// </summary>
+        public static string Warning_DefaultSpecValue {
+            get {
+                return ResourceManager.GetString("Warning_DefaultSpecValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Replace with an appropriate value or remove and it and rebuild your package..
+        /// </summary>
+        public static string Warning_DefaultSpecValueSolution {
+            get {
+                return ResourceManager.GetString("Warning_DefaultSpecValueSolution", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remove sample nuspec values..
+        /// </summary>
+        public static string Warning_DefaultSpecValueTitle {
+            get {
+                return ResourceManager.GetString("Warning_DefaultSpecValueTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &apos;{0}&apos; key already exists in Properties collection. Overriding value..
+        /// </summary>
+        public static string Warning_DuplicatePropertyKey {
+            get {
+                return ResourceManager.GetString("Warning_DuplicatePropertyKey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &apos;{0}&apos; was included in the project but doesn&apos;t exist. Skipping....
+        /// </summary>
+        public static string Warning_FileDoesNotExist {
+            get {
+                return ResourceManager.GetString("Warning_FileDoesNotExist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to You are running the &apos;{0}&apos; operation with an &apos;HTTP&apos; source, &apos;{1}&apos;. Non-HTTPS access will be removed in a future version. Consider migrating to an &apos;HTTPS&apos; source..
         /// </summary>
         public static string Warning_HttpServerUsage {
@@ -2095,6 +2743,96 @@ namespace NuGet.CommandLine {
         public static string Warning_HttpSources_Multiple {
             get {
                 return ResourceManager.GetString("Warning_HttpSources_Multiple", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid PackageSaveMode value &apos;{0}&apos;..
+        /// </summary>
+        public static string Warning_InvalidPackageSaveMode {
+            get {
+                return ResourceManager.GetString("Warning_InvalidPackageSaveMode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enbale long file path support in local group policy. Fore more details, please refer to https://aka.ms/nuget-long-path..
+        /// </summary>
+        public static string Warning_LongPath_DisabledPolicy {
+            get {
+                return ResourceManager.GetString("Warning_LongPath_DisabledPolicy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please install .NET Framework 4.6.2 or above that supports long file paths. Fore more details, please refer to https://aka.ms/nuget-long-path..
+        /// </summary>
+        public static string Warning_LongPath_UnsupportedNetFramework {
+            get {
+                return ResourceManager.GetString("Warning_LongPath_UnsupportedNetFramework", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Long file path is currently only supported on Windows 10. Fore more details, please refer to https://aka.ms/nuget-long-path..
+        /// </summary>
+        public static string Warning_LongPath_UnsupportedOS {
+            get {
+                return ResourceManager.GetString("Warning_LongPath_UnsupportedOS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MsbuildPath : {0} is using, ignore MsBuildVersion: {1}. .
+        /// </summary>
+        public static string Warning_MsbuildPath {
+            get {
+                return ResourceManager.GetString("Warning_MsbuildPath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Option &apos;NoPrompt&apos; has been deprecated. Use &apos;NonInteractive&apos; instead..
+        /// </summary>
+        public static string Warning_NoPromptDeprecated {
+            get {
+                return ResourceManager.GetString("Warning_NoPromptDeprecated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error reading msbuild project information, ensure that your input solution or project file is valid. NETCore and UAP projects will be skipped, only packages.config files will be restored..
+        /// </summary>
+        public static string Warning_ReadingProjectsFailed {
+            get {
+                return ResourceManager.GetString("Warning_ReadingProjectsFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Version &quot;{0}&quot; does not follow semantic versioning guidelines..
+        /// </summary>
+        public static string Warning_SemanticVersion {
+            get {
+                return ResourceManager.GetString("Warning_SemanticVersion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update your nuspec file or use the AssemblyInformationalVersion assembly attribute to specify a semantic version as described at http://semver.org. .
+        /// </summary>
+        public static string Warning_SemanticVersionSolution {
+            get {
+                return ResourceManager.GetString("Warning_SemanticVersionSolution", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Use semantic versioning.
+        /// </summary>
+        public static string Warning_SemanticVersionTitle {
+            get {
+                return ResourceManager.GetString("Warning_SemanticVersionTitle", resourceCulture);
             }
         }
         
@@ -2212,6 +2950,51 @@ namespace NuGet.CommandLine {
         public static string Warning_SymbolServerNotConfigured_trk {
             get {
                 return ResourceManager.GetString("Warning_SymbolServerNotConfigured_trk", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &apos;{0}&apos; was included in the project but the path could not be resolved. Skipping....
+        /// </summary>
+        public static string Warning_UnresolvedFilePath {
+            get {
+                return ResourceManager.GetString("Warning_UnresolvedFilePath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The version of dependency &apos;{0}&apos; is not specified..
+        /// </summary>
+        public static string Warning_UnspecifiedDependencyVersion {
+            get {
+                return ResourceManager.GetString("Warning_UnspecifiedDependencyVersion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Specify the version of dependency and rebuild your package..
+        /// </summary>
+        public static string Warning_UnspecifiedDependencyVersionSolution {
+            get {
+                return ResourceManager.GetString("Warning_UnspecifiedDependencyVersionSolution", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Specify version of dependencies..
+        /// </summary>
+        public static string Warning_UnspecifiedDependencyVersionTitle {
+            get {
+                return ResourceManager.GetString("Warning_UnspecifiedDependencyVersionTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} was not specified. Using &apos;{1}&apos;..
+        /// </summary>
+        public static string Warning_UnspecifiedField {
+            get {
+                return ResourceManager.GetString("Warning_UnspecifiedField", resourceCulture);
             }
         }
     }

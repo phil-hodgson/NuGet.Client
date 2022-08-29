@@ -219,6 +219,15 @@
   <data name="UsingPackagesConfigForDependencies" xml:space="preserve">
     <value>Found packages.config. Using packages listed as dependencies</value>
   </data>
+  <data name="Warning_FileDoesNotExist" xml:space="preserve">
+    <value>'{0}' was included in the project but doesn't exist. Skipping...</value>
+  </data>
+  <data name="Warning_UnresolvedFilePath" xml:space="preserve">
+    <value>'{0}' was included in the project but the path could not be resolved. Skipping...</value>
+  </data>
+  <data name="Warning_UnspecifiedField" xml:space="preserve">
+    <value>{0} was not specified. Using '{1}'.</value>
+  </data>
   <data name="DefaultSymbolServer" xml:space="preserve">
     <value>the symbol server</value>
   </data>
@@ -279,6 +288,18 @@
   <data name="UnableToFindSolution" xml:space="preserve">
     <value>Unable to find solution '{0}'.</value>
   </data>
+  <data name="CommandLine_Warning" xml:space="preserve">
+    <value>WARNING: {0}</value>
+  </data>
+  <data name="Credentials_Password" xml:space="preserve">
+    <value>Password: </value>
+  </data>
+  <data name="Credentials_UserName" xml:space="preserve">
+    <value>UserName: </value>
+  </data>
+  <data name="Credentials_RequestCredentials" xml:space="preserve">
+    <value>Please provide credentials for: {0}</value>
+  </data>
   <data name="InstallCommandPackageAlreadyExists" xml:space="preserve">
     <value>Package "{0}" is already installed.</value>
   </data>
@@ -306,6 +327,27 @@
   <data name="PackageCommandIssueTitle" xml:space="preserve">
     <value>Issue: {0}</value>
   </data>
+  <data name="Warning_DefaultSpecValue" xml:space="preserve">
+    <value>The value "{0}" for {1} is a sample value and should be removed.</value>
+  </data>
+  <data name="Warning_DefaultSpecValueSolution" xml:space="preserve">
+    <value>Replace with an appropriate value or remove and it and rebuild your package.</value>
+  </data>
+  <data name="Warning_DefaultSpecValueTitle" xml:space="preserve">
+    <value>Remove sample nuspec values.</value>
+  </data>
+  <data name="Credentials_ProxyCredentials" xml:space="preserve">
+    <value>Please provide proxy credentials:</value>
+  </data>
+  <data name="Warning_SemanticVersion" xml:space="preserve">
+    <value>Version "{0}" does not follow semantic versioning guidelines.</value>
+  </data>
+  <data name="Warning_SemanticVersionSolution" xml:space="preserve">
+    <value>Update your nuspec file or use the AssemblyInformationalVersion assembly attribute to specify a semantic version as described at http://semver.org. </value>
+  </data>
+  <data name="Warning_SemanticVersionTitle" xml:space="preserve">
+    <value>Use semantic versioning</value>
+  </data>
   <data name="OfficialPackageSourceName" xml:space="preserve">
     <value>NuGet official package source</value>
   </data>
@@ -324,11 +366,23 @@
   <data name="Error" xml:space="preserve">
     <value>Error</value>
   </data>
+  <data name="Error_CannotPromptForInput" xml:space="preserve">
+    <value>Cannot prompt for input in non-interactive mode.</value>
+  </data>
+  <data name="Option_VerboseDeprecated" xml:space="preserve">
+    <value>Option 'Verbose' has been deprecated. Use 'Verbosity' instead.</value>
+  </data>
   <data name="SpecCommandCreatedNuSpec" xml:space="preserve">
     <value>Created '{0}' successfully.</value>
   </data>
   <data name="SpecCommandFileExists" xml:space="preserve">
     <value>'{0}' already exists, use -Force to overwrite it.</value>
+  </data>
+  <data name="Warning_NoPromptDeprecated" xml:space="preserve">
+    <value>Option 'NoPrompt' has been deprecated. Use 'NonInteractive' instead.</value>
+  </data>
+  <data name="Error_SettingsIsNull" xml:space="preserve">
+    <value>Property Settings is null.</value>
   </data>
   <data name="PackageCommandInvalidMinClientVersion" xml:space="preserve">
     <value>The value of MinClientVersion argument is not a valid version.</value>
@@ -339,9 +393,27 @@
   <data name="FileNotAddedToPackage" xml:space="preserve">
     <value>File '{0}' is not added because the package already contains file '{1}'</value>
   </data>
+  <data name="Error_ProcessingNuspecFile" xml:space="preserve">
+    <value>Error occurred when processing file '{0}': {1}</value>
+  </data>
+  <data name="Warning_DuplicatePropertyKey" xml:space="preserve">
+    <value>'{0}' key already exists in Properties collection. Overriding value.</value>
+  </data>
+  <data name="ListCommand_LicenseUrl" xml:space="preserve">
+    <value>License url: {0}</value>
+  </data>
   <data name="FileConflictChoiceText" xml:space="preserve">
     <value>[Y] Yes  [A] Yes to All  [N] No  [L] No to All ?</value>
     <comment>Please do not localize the letters inside the [] brackets.</comment>
+  </data>
+  <data name="Error_InvalidCharactersInPathSegment" xml:space="preserve">
+    <value>Invalid characters in one of the following path segments: '{0}'</value>
+  </data>
+  <data name="Error_InvalidSolutionDirectory" xml:space="preserve">
+    <value>Invalid solution directory: '{0}'</value>
+  </data>
+  <data name="Error_MultipleSolutions" xml:space="preserve">
+    <value>This folder contains more than one solution file.</value>
   </data>
   <data name="RestoreCommandOptionSolutionDirectoryIsInvalid" xml:space="preserve">
     <value>Option -SolutionDirectory is not valid when restoring packages for a solution.</value>
@@ -351,6 +423,12 @@
   </data>
   <data name="RestoreCommandRestoringPackagesFromPackagesConfigFile" xml:space="preserve">
     <value>Restoring NuGet packages listed in packages.config file.</value>
+  </data>
+  <data name="Error_CannotLoadTypeProjectInSolution" xml:space="preserve">
+    <value>Cannot load type Microsoft.Build.Construction.ProjectInSolution from Microsoft.Build.dll</value>
+  </data>
+  <data name="Error_CannotLoadTypeSolutionParser" xml:space="preserve">
+    <value>Cannot load type Microsoft.Build.Construction.SolutionParser from Microsoft.Build.dll</value>
   </data>
   <data name="RestoreCommandRestoringPackagesListedInFile" xml:space="preserve">
     <value>Restoring NuGet packages listed in file {0}.</value>
@@ -373,6 +451,15 @@ To prevent NuGet from downloading packages during build, open the Visual Studio 
   </data>
   <data name="SolutionRestoreCommandNoPackagesConfigOrProjectJson" xml:space="preserve">
     <value>Nothing to do. None of the projects in this solution specify any packages for NuGet to restore.</value>
+  </data>
+  <data name="Error_CannotGetGetAllProjectFileNamesMethod" xml:space="preserve">
+    <value>Cannot get the GetAllProjectFileNamesMethod from type  Mono.XBuild.CommandLine.SolutionParser.</value>
+  </data>
+  <data name="Error_CannotGetXBuildSolutionParser" xml:space="preserve">
+    <value>Cannot get type Mono.XBuild.CommandLine.SolutionParser.</value>
+  </data>
+  <data name="Error_CannotLocateSolutionFile" xml:space="preserve">
+    <value>Cannot locate a solution file.</value>
   </data>
   <data name="DeleteCommandDeletedPackage_csy" xml:space="preserve">
     <value>{0} {1} bylo úspěšně odstraněno.</value>
@@ -770,9 +857,24 @@ To prevent NuGet from downloading packages during build, open the Visual Studio 
   <data name="UnableToFindProject" xml:space="preserve">
     <value>Unable to find project '{0}'.</value>
   </data>
+  <data name="Warning_InvalidPackageSaveMode" xml:space="preserve">
+    <value>Invalid PackageSaveMode value '{0}'.</value>
+  </data>
+  <data name="Warning_UnspecifiedDependencyVersion" xml:space="preserve">
+    <value>The version of dependency '{0}' is not specified.</value>
+  </data>
+  <data name="Warning_UnspecifiedDependencyVersionSolution" xml:space="preserve">
+    <value>Specify the version of dependency and rebuild your package.</value>
+  </data>
+  <data name="Warning_UnspecifiedDependencyVersionTitle" xml:space="preserve">
+    <value>Specify version of dependencies.</value>
+  </data>
   <data name="HelpCommandForMoreInfo" xml:space="preserve">
     <value>For more information, visit {0}</value>
     <comment>{0} will be replaced with a url.</comment>
+  </data>
+  <data name="SettingsCredentials_UsingSavedCredentials" xml:space="preserve">
+    <value>Using credentials from config. UserName: {0}</value>
   </data>
   <data name="InstallCommandUnableToFindPackage" xml:space="preserve">
     <value>Unable to find package '{0}'</value>
@@ -784,8 +886,32 @@ To prevent NuGet from downloading packages during build, open the Visual Studio 
     <value>'globalPackagesFolder' setting is a relative path. To determine full path, please specify either -SolutionDirectory or a solution file as a parameter. To ignore 'globalPackagesFolder' setting, specify -PackagesDirectory.</value>
     <comment>Please do not localize 'globalPackagesFolder', -SolutionDirectory or -PackagesDirectory</comment>
   </data>
+  <data name="Error_PackagesConfigParseError" xml:space="preserve">
+    <value>Error parsing packages.config file at {0}: {1}</value>
+  </data>
+  <data name="Error_SolutionFileParseError" xml:space="preserve">
+    <value>Error parsing solution file at {0}: {1}</value>
+  </data>
+  <data name="Error_UnsupportedMsbuild" xml:space="preserve">
+    <value>This version of msbuild is not supported: '{0}'</value>
+  </data>
+  <data name="Error_CannotFindMsbuild" xml:space="preserve">
+    <value>Cannot find the specified version of msbuild: '{0}'</value>
+  </data>
+  <data name="Error_InvalidMsbuildVersion" xml:space="preserve">
+    <value>Invalid MSBuild version specified: '{0}'</value>
+  </data>
+  <data name="ListCommand_ListNotSupported" xml:space="preserve">
+    <value>This version of nuget.exe does not support listing packages from package source '{0}'.</value>
+  </data>
   <data name="MSBuildAutoDetection" xml:space="preserve">
     <value>MSBuild auto-detection: using msbuild version '{0}' from '{1}'.</value>
+  </data>
+  <data name="MSBuildAutoDetection_Verbose" xml:space="preserve">
+    <value>MSBuild auto-detection: using msbuild version '{0}' from '{1}'. Use option -MSBuildVersion to force nuget to use a specific version of MSBuild.</value>
+  </data>
+  <data name="Error_MSBuildNotInstalled" xml:space="preserve">
+    <value>MSBuild is not installed.</value>
   </data>
   <data name="FailedToLoadExtension" xml:space="preserve">
     <value>Failed to load {0}, if this extension was downloaded from the internet please make sure it got unblocked (right click, properties, unblock).</value>
@@ -793,17 +919,109 @@ To prevent NuGet from downloading packages during build, open the Visual Studio 
   <data name="FailedToLoadExtensionDuringMefComposition" xml:space="preserve">
     <value>Failed to load {0}{1}</value>
   </data>
+  <data name="Path_Invalid" xml:space="preserve">
+    <value>'{0}' is not a valid path.</value>
+  </data>
+  <data name="NupkgPath_InvalidNupkg" xml:space="preserve">
+    <value>'{0}' is not a valid nupkg file.</value>
+  </data>
+  <data name="NupkgPath_NotFound" xml:space="preserve">
+    <value>Provided Nupkg file '{0}' is not found.</value>
+  </data>
+  <data name="Path_Invalid_NotFileNotUnc" xml:space="preserve">
+    <value>'{0}' should be a local path or a UNC share path.</value>
+  </data>
+  <data name="Source_NotFound" xml:space="preserve">
+    <value>Source '{0}' is not found.</value>
+  </data>
+  <data name="AddCommand_PackageAlreadyExists" xml:space="preserve">
+    <value>Package '{0}' already exists at feed '{1}'.</value>
+  </data>
+  <data name="AddCommand_ExistingPackageInvalid" xml:space="preserve">
+    <value>Package '{0}' already exists at feed '{1}' and is invalid.</value>
+  </data>
+  <data name="InitCommand_FeedContainsNoPackages" xml:space="preserve">
+    <value>Feed '{0}' contains no packages.</value>
+  </data>
+  <data name="InitCommand_FeedIsNotFound" xml:space="preserve">
+    <value>Provided feed folder '{0}' is not found.</value>
+  </data>
+  <data name="AddCommand_SourceNotProvided" xml:space="preserve">
+    <value>'-Source' switch is not provided. nupkg gets added to the 'Source' and is mandatory.</value>
+  </data>
+  <data name="LocalsCommand_ClearedSuccessful" xml:space="preserve">
+    <value>Local resources cleared.</value>
+  </data>
+  <data name="LocalsCommand_ClearingNuGetCache" xml:space="preserve">
+    <value>Clearing NuGet cache: {0}</value>
+  </data>
+  <data name="LocalsCommand_ClearingNuGetGlobalPackagesCache" xml:space="preserve">
+    <value>Clearing NuGet global packages cache: {0}</value>
+  </data>
+  <data name="LocalsCommand_ClearingNuGetHttpCache" xml:space="preserve">
+    <value>Clearing NuGet HTTP cache: {0}</value>
+  </data>
+  <data name="LocalsCommand_ClearFailed" xml:space="preserve">
+    <value>Clearing local resources failed: one or more errors occured.</value>
+  </data>
+  <data name="LocalsCommand_InvalidLocalResourceName" xml:space="preserve">
+    <value>An invalid local resource name was provided. Please provide one of the following values: http-cache, packages-cache, global-packages, all.</value>
+  </data>
+  <data name="LocalsCommand_LocalResourcePathNotSet" xml:space="preserve">
+    <value>The location of local resource '{0}' is undefined.</value>
+  </data>
+  <data name="Error_MsBuildTimedOut" xml:space="preserve">
+    <value>MsBuild timeout out while trying to get project to project references.</value>
+  </data>
+  <data name="Error_CannotKillMsBuild" xml:space="preserve">
+    <value>MsBuild timeout out while trying to get project to project references, and NuGet.exe failed to kill the process.</value>
+  </data>
+  <data name="Error_FailedToCreateRandomFileForP2P" xml:space="preserve">
+    <value>Failed to create a temporary file while trying to get project to project references.</value>
+  </data>
+  <data name="LocalsCommand_FailedToDeletePath" xml:space="preserve">
+    <value>Failed to delete '{0}'.</value>
+  </data>
+  <data name="LocalsCommand_LocalsPartiallyCleared" xml:space="preserve">
+    <value>Local resources partially cleared.</value>
+  </data>
+  <data name="Error_MissingSourceParameter" xml:space="preserve">
+    <value>Source parameter was not specified.</value>
+  </data>
+  <data name="Error_UnableToLocateRestoreTarget" xml:space="preserve">
+    <value>The folder '{0}' does not contain an msbuild solution or packages.config file to restore.</value>
+  </data>
+  <data name="Error_UnableToLocateRestoreTarget_Because" xml:space="preserve">
+    <value>Failed to find an msbuild solution, packages.config, or project.json file in the folder '{0}'.</value>
+    <comment>{0} is the folder that could not be accessed. The underlying failure is available in the inner exception message.</comment>
+  </data>
   <data name="PushCommandTimeoutError" xml:space="preserve">
     <value>Pushing took too long. You can change the default timeout of 300 seconds by using the -Timeout &lt;seconds&gt; option with the push command.</value>
   </data>
   <data name="InvalidAssemblyInformationalVersion" xml:space="preserve">
     <value>Invalid AssemblyInformationalVersion '{0}' on assembly '{1}'; falling back to AssemblyVersion '{2}'.</value>
   </data>
+  <data name="Credentials_ForbiddenCredentials" xml:space="preserve">
+    <value>The remote server indicated that the previous request was forbidden. Please provide credentials for: {0}</value>
+    <comment>{0} will be replaced with the URL that needs credentials.</comment>
+  </data>
   <data name="OutputNuGetVersion" xml:space="preserve">
     <value>{0} Version: {1}</value>
   </data>
+  <data name="Error_MultipleTargetFrameworks" xml:space="preserve">
+    <value>project.json cannot contain multiple Target Frameworks.</value>
+  </data>
+  <data name="Error_ProjectJsonNotAllowed" xml:space="preserve">
+    <value>Invalid input '{0}'. Provide the path of an msbuild solution file instead. Support for XProj and standalone project.json files has been removed, to continue working with legacy projects use NuGet 3.5.x from https://nuget.org/downloads</value>
+  </data>
+  <data name="Warning_ReadingProjectsFailed" xml:space="preserve">
+    <value>Error reading msbuild project information, ensure that your input solution or project file is valid. NETCore and UAP projects will be skipped, only packages.config files will be restored.</value>
+  </data>
   <data name="MsbuildLoadToolSetError" xml:space="preserve">
     <value>Failed to load msbuild Toolset</value>
+  </data>
+  <data name="Warning_MsbuildPath" xml:space="preserve">
+    <value>MsbuildPath : {0} is using, ignore MsBuildVersion: {1}. </value>
   </data>
   <data name="MSbuildFromPath" xml:space="preserve">
     <value>Using Msbuild from '{0}'.</value>
@@ -819,6 +1037,57 @@ To prevent NuGet from downloading packages during build, open the Visual Studio 
   </data>
   <data name="InstallPackageMessage" xml:space="preserve">
     <value>Installing package '{0}' to '{1}'.</value>
+  </data>
+  <data name="Error_ResponseFileDoesNotExist" xml:space="preserve">
+    <value>Response file '{0}' does not exist</value>
+  </data>
+  <data name="Error_ResponseFileInvalid" xml:space="preserve">
+    <value>Invalid response file, '@' does not exist</value>
+  </data>
+  <data name="Error_ResponseFileMaxRecursionDepth" xml:space="preserve">
+    <value>No more than {0} nested response files are allowed</value>
+  </data>
+  <data name="Error_ResponseFileNullOrEmpty" xml:space="preserve">
+    <value>Response file '{0}' cannot be empty</value>
+  </data>
+  <data name="Error_ResponseFileTooLarge" xml:space="preserve">
+    <value>Response file '{0}' cannot be larger than {1}mb</value>
+  </data>
+  <data name="ConsolePasswordProvider_DisplayFile" xml:space="preserve">
+    <value>Please provide password for: {0}</value>
+    <comment>0 - file that requires password</comment>
+  </data>
+  <data name="ConsolePasswordProvider_PromptForPassword" xml:space="preserve">
+    <value>Password: </value>
+  </data>
+  <data name="Warning_LongPath_DisabledPolicy" xml:space="preserve">
+    <value>Please enbale long file path support in local group policy. Fore more details, please refer to https://aka.ms/nuget-long-path.</value>
+  </data>
+  <data name="Warning_LongPath_UnsupportedNetFramework" xml:space="preserve">
+    <value>Please install .NET Framework 4.6.2 or above that supports long file paths. Fore more details, please refer to https://aka.ms/nuget-long-path.</value>
+  </data>
+  <data name="Warning_LongPath_UnsupportedOS" xml:space="preserve">
+    <value>Long file path is currently only supported on Windows 10. Fore more details, please refer to https://aka.ms/nuget-long-path.</value>
+  </data>
+  <data name="Error_UnknownAction" xml:space="preserve">
+    <value>The action '{0}' is not recognized.</value>
+    <comment>0 - action</comment>
+  </data>
+  <data name="Error_ArgumentNotExpected" xml:space="preserve">
+    <value>The argument '{0}' is not expected.</value>
+    <comment>0 - argument name</comment>
+  </data>
+  <data name="ProjectJsonPack_Deprecated" xml:space="preserve">
+    <value>`project.json` pack is deprecated. Please consider migrating '{0}' to `PackageReference` and using the pack targets.</value>
+    <comment>Do not localize project.json and `PackageReference` 
+0 - project path (project.json file path)</comment>
+  </data>
+  <data name="Error_UnknownDependencyVersion" xml:space="preserve">
+    <value>Invalid value given for 'DependencyVersion': "{0}".</value>
+    <comment>Please don't localize "DependencyVersion".</comment>
+  </data>
+  <data name="Error_UpdateSelf_Source" xml:space="preserve">
+    <value>The `update -self` command only accepts one source as an argument. If the source option is not specified, the default NuGet source will be used.</value>
   </data>
   <data name="ArgumentNullOrEmpty" xml:space="preserve">
     <value>Argument cannot be null or empty.</value>
