@@ -26,7 +26,7 @@ namespace NuGet.CommandLine.Test
         public void GetLocalizedString_MultipleStringResources_ReturnsMultilineStringResources()
         {
             // Arrange & Act
-            string resource = ResourceHelper.GetLocalizedString(typeof(NuGetCommand), "CommandNoServiceEndpointDescription;ConfigCommandDesc;DeleteCommandDescription_jpn");
+            string resource = ResourceHelper.GetLocalizedString(typeof(NuGetCommand), "CommandNoServiceEndpointDescription;ConfigCommandDesc");
 
             string[] rep = resource.Split(Environment.NewLine.ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
 

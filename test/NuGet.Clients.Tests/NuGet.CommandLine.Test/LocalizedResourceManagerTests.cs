@@ -11,16 +11,6 @@ namespace NuGet.CommandLine.Test
 {
     public class LocalizedResourceManagerTests
     {
-        [Fact]
-        public void GetLanguageName_DefaultCulture_ReturnsEnu()
-        {
-            // Arrange & Act
-            string name = LocalizedResourceManager.GetLanguageName();
-
-            // Assert
-            Assert.Equal("enu", name);
-        }
-
         [Theory]
         [InlineData("A_String_With_No_Name")]
         [InlineData("An_unknown_String")]
@@ -34,7 +24,6 @@ namespace NuGet.CommandLine.Test
         }
 
         [Theory]
-        [InlineData("AddFileToPackage_cht")]
         [InlineData("SpecCommandCreatedNuSpec")]
         public void GetString_ExistingResourceInNuGetResources_ReturnsStringResource(string stringResourceName)
         {
@@ -46,7 +35,6 @@ namespace NuGet.CommandLine.Test
         }
 
         [Theory]
-        [InlineData("AddFileToPackage_cht", typeof(NuGetResources) )]
         [InlineData("SpecCommandCreatedNuSpec", typeof(NuGetResources) )]
         [InlineData("UpdateCommandPrerelease", typeof(NuGetCommand))]
         public void GetString_ExistingResourcesInOtherResources_ReturnsStringResource(string resourceName, Type resourceType)

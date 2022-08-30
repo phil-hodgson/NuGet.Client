@@ -59,7 +59,7 @@ namespace NuGet.CommandLine.Test
         [Fact]
         public void HelpCommand_Failure_InvalidArguments()
         {
-            Util.TestCommandInvalidArguments("help aCommand otherCommand");
+            Util.TestCommandInvalidArguments("help aCommand otherCommand -ForceEnglishOutput");
         }
     }
 }
