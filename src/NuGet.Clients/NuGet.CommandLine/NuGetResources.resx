@@ -1109,7 +1109,4 @@ You can set the '{1}' environment variable to 'true' to temporarily reenable thi
     <value>You are running the '{0}' operation with 'HTTP' sources: {1}
 Non-HTTPS access will be removed in a future version. Consider migrating to 'HTTPS' sources.</value>
   </data>
-  <data name="Argument_Cannot_Be_Null_Or_Empty" xml:space="preserve">
-    <value>Value cannot be null or an empty string.</value>
-  </data>
 </root>

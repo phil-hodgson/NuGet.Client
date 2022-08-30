@@ -115,15 +115,6 @@ namespace NuGet.CommandLine {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Value cannot be null or an empty string..
-        /// </summary>
-        public static string Argument_Cannot_Be_Null_Or_Empty {
-            get {
-                return ResourceManager.GetString("Argument_Cannot_Be_Null_Or_Empty", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Argument cannot be null or empty..
         /// </summary>
         public static string ArgumentNullOrEmpty {

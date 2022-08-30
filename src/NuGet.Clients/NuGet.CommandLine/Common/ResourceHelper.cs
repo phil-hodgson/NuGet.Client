@@ -19,7 +19,7 @@ namespace NuGet.CommandLine
             }
             if (string.IsNullOrEmpty(resourceNames))
             {
-                throw new ArgumentException("Cannot be null or empty", nameof(resourceNames));
+                throw new ArgumentException(NuGetResources.ArgumentNullOrEmpty, nameof(resourceNames));
             }
 
             if (_cachedManagers == null)
