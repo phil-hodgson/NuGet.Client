@@ -9,10 +9,8 @@ namespace NuGet.CommandLine.Test
     public class ResourceHelperTests
     {
         [Theory]
-        [InlineData(typeof(NuGetCommand), "PushCommandUsageExamples_chs")]
         [InlineData(typeof(NuGetCommand), "SignCommandCertificatePathDescription")]
         [InlineData(typeof(NuGetResources), "UnableToConvertTypeError")]
-        [InlineData(typeof(NuGetResources), "UnableToFindProject_fra")]
         public void GetLocalizedString_ExistingResource_ReturnsStringResource(Type type, string resourceName)
         {
             // Arrange & Act
@@ -31,7 +29,7 @@ namespace NuGet.CommandLine.Test
             string[] rep = resource.Split(Environment.NewLine.ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
 
             // Assert
-            Assert.Equal(3, rep.Length);
+            Assert.Equal(2, rep.Length);
             Assert.All(rep, e => Assert.NotEmpty(e));
         }
 
