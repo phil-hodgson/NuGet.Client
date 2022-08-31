@@ -19,7 +19,7 @@ namespace NuGet.CommandLine {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class NuGetCommand {
@@ -108,7 +108,7 @@ namespace NuGet.CommandLine {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Path to certificate file added to a file client certificate source..
+        ///   Looks up a localized string similar to Path to certificate file..
         /// </summary>
         internal static string ClientCertificatesCommandFilePathDescription {
             get {
@@ -117,7 +117,7 @@ namespace NuGet.CommandLine {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FindBy added to a store client certificate source..
+        ///   Looks up a localized string similar to Search method to find certificate in certificate store (see docs)..
         /// </summary>
         internal static string ClientCertificatesCommandFindByDescription {
             get {
@@ -126,7 +126,7 @@ namespace NuGet.CommandLine {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FindValue added to a storage client certificate source..
+        ///   Looks up a localized string similar to Search the certificate store for the supplied value. Used with FindValue (see docs)..
         /// </summary>
         internal static string ClientCertificatesCommandFindValueDescription {
             get {
@@ -135,7 +135,7 @@ namespace NuGet.CommandLine {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bypass certificate validation..
+        ///   Looks up a localized string similar to Skip certificate validation..
         /// </summary>
         internal static string ClientCertificatesCommandForceDescription {
             get {
@@ -144,7 +144,7 @@ namespace NuGet.CommandLine {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Determines to which package source client certificate will be applied to..
+        ///   Looks up a localized string similar to Package source name..
         /// </summary>
         internal static string ClientCertificatesCommandPackageSourceDescription {
             get {
@@ -153,7 +153,7 @@ namespace NuGet.CommandLine {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Password for the certificate, if needed. This option can be used to specify the password for the certificate..
+        ///   Looks up a localized string similar to Password for the certificate, if needed..
         /// </summary>
         internal static string ClientCertificatesCommandPasswordDescription {
             get {
@@ -162,7 +162,7 @@ namespace NuGet.CommandLine {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to StoreLocation added to a storage client certificate source..
+        ///   Looks up a localized string similar to Certificate store location (see docs)..
         /// </summary>
         internal static string ClientCertificatesCommandStoreLocationDescription {
             get {
@@ -171,7 +171,7 @@ namespace NuGet.CommandLine {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to StoreName added to a storage client certificate source..
+        ///   Looks up a localized string similar to Certificate store name (see docs)..
         /// </summary>
         internal static string ClientCertificatesCommandStoreNameDescription {
             get {
@@ -180,7 +180,7 @@ namespace NuGet.CommandLine {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Enables storing password for the certificate by disabling password encryption..
+        ///   Looks up a localized string similar to Enables storing portable certificate password by disabling password encryption..
         /// </summary>
         internal static string ClientCertificatesCommandStorePasswordInClearTextDescription {
             get {
@@ -206,7 +206,7 @@ namespace NuGet.CommandLine {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;List|Add|Update|Remove|&gt; [options].
+        ///   Looks up a localized string similar to &lt;List|Add|Update|Remove&gt; [options].
         /// </summary>
         internal static string ClientCertificatesCommandUsageSummary {
             get {
@@ -215,7 +215,7 @@ namespace NuGet.CommandLine {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Provides the ability to manage list of client certificates located in %AppData%\NuGet\NuGet.config.
+        ///   Looks up a localized string similar to Provides the ability to manage list of client certificates located in NuGet.config files.
         /// </summary>
         internal static string ClientCertificatesDescription {
             get {
@@ -3493,123 +3493,6 @@ namespace NuGet.CommandLine {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 禁止并行 nuget 程序包安装。.
-        /// </summary>
-        internal static string InstallCommandDisableParallel_chs {
-            get {
-                return ResourceManager.GetString("InstallCommandDisableParallel_chs", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 停用平行 nuget 封裝安裝。.
-        /// </summary>
-        internal static string InstallCommandDisableParallel_cht {
-            get {
-                return ResourceManager.GetString("InstallCommandDisableParallel_cht", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Zakáže instalaci paralelních balíčků nuget..
-        /// </summary>
-        internal static string InstallCommandDisableParallel_csy {
-            get {
-                return ResourceManager.GetString("InstallCommandDisableParallel_csy", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Parallele nuget-Paketinstallationen deaktivieren..
-        /// </summary>
-        internal static string InstallCommandDisableParallel_deu {
-            get {
-                return ResourceManager.GetString("InstallCommandDisableParallel_deu", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Deshabilitar las instalaciones del paquete nuget en paralelo..
-        /// </summary>
-        internal static string InstallCommandDisableParallel_esp {
-            get {
-                return ResourceManager.GetString("InstallCommandDisableParallel_esp", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Désactivez les installations du package nuget parallèle..
-        /// </summary>
-        internal static string InstallCommandDisableParallel_fra {
-            get {
-                return ResourceManager.GetString("InstallCommandDisableParallel_fra", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Disabilita parallel nuget package installs..
-        /// </summary>
-        internal static string InstallCommandDisableParallel_ita {
-            get {
-                return ResourceManager.GetString("InstallCommandDisableParallel_ita", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to nuget パッケージの並列インストールを無効にします。.
-        /// </summary>
-        internal static string InstallCommandDisableParallel_jpn {
-            get {
-                return ResourceManager.GetString("InstallCommandDisableParallel_jpn", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 병렬 nuget 패키지 설치를 사용하지 않도록 설정합니다..
-        /// </summary>
-        internal static string InstallCommandDisableParallel_kor {
-            get {
-                return ResourceManager.GetString("InstallCommandDisableParallel_kor", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Wyłącz równoległe instalacje pakietów nuget..
-        /// </summary>
-        internal static string InstallCommandDisableParallel_plk {
-            get {
-                return ResourceManager.GetString("InstallCommandDisableParallel_plk", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Desabilite instalações de pacotes NuGet paralelas..
-        /// </summary>
-        internal static string InstallCommandDisableParallel_ptb {
-            get {
-                return ResourceManager.GetString("InstallCommandDisableParallel_ptb", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Отключает параллельную установку пакетов NuGet..
-        /// </summary>
-        internal static string InstallCommandDisableParallel_rus {
-            get {
-                return ResourceManager.GetString("InstallCommandDisableParallel_rus", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Paralel nuget paketi yüklemelerini devre dışı bırak..
-        /// </summary>
-        internal static string InstallCommandDisableParallel_trk {
-            get {
-                return ResourceManager.GetString("InstallCommandDisableParallel_trk", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to If set, the destination folder will contain only the package name, not the version number.
         /// </summary>
         internal static string InstallCommandExcludeVersionDescription {
@@ -3741,123 +3624,6 @@ namespace NuGet.CommandLine {
         internal static string InstallCommandFrameworkDescription {
             get {
                 return ResourceManager.GetString("InstallCommandFrameworkDescription", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 禁止使用计算机缓存作为第一个程序包源。.
-        /// </summary>
-        internal static string InstallCommandNoCache_chs {
-            get {
-                return ResourceManager.GetString("InstallCommandNoCache_chs", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 停用使用機器快取做為第一個封裝來源。.
-        /// </summary>
-        internal static string InstallCommandNoCache_cht {
-            get {
-                return ResourceManager.GetString("InstallCommandNoCache_cht", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Zakáže použití mezipaměti počítače jako prvního zdroje balíčků..
-        /// </summary>
-        internal static string InstallCommandNoCache_csy {
-            get {
-                return ResourceManager.GetString("InstallCommandNoCache_csy", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Verwenden des Computercaches als erste Paketquelle deaktivieren..
-        /// </summary>
-        internal static string InstallCommandNoCache_deu {
-            get {
-                return ResourceManager.GetString("InstallCommandNoCache_deu", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Deshabilitar el caché de la máquina como el origen del primer paquete..
-        /// </summary>
-        internal static string InstallCommandNoCache_esp {
-            get {
-                return ResourceManager.GetString("InstallCommandNoCache_esp", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Désactivation grâce au cache de l&apos;ordinateur, agissant comme première source du package..
-        /// </summary>
-        internal static string InstallCommandNoCache_fra {
-            get {
-                return ResourceManager.GetString("InstallCommandNoCache_fra", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Disabilitare usando la cache della macchina come prima fonte pacchetto..
-        /// </summary>
-        internal static string InstallCommandNoCache_ita {
-            get {
-                return ResourceManager.GetString("InstallCommandNoCache_ita", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 最初のパッケージ ソースとしてのコンピューター キャッシュの使用を無効にします。.
-        /// </summary>
-        internal static string InstallCommandNoCache_jpn {
-            get {
-                return ResourceManager.GetString("InstallCommandNoCache_jpn", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 시스템 캐시를 첫 번째 패키지 소스로 사용하지 않도록 설정합니다..
-        /// </summary>
-        internal static string InstallCommandNoCache_kor {
-            get {
-                return ResourceManager.GetString("InstallCommandNoCache_kor", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Wyłącz, używając pamięci podręcznej komputera jako pierwszego źródła pakietu..
-        /// </summary>
-        internal static string InstallCommandNoCache_plk {
-            get {
-                return ResourceManager.GetString("InstallCommandNoCache_plk", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Desative usando o cache da máquina como a primeira origem de pacotes..
-        /// </summary>
-        internal static string InstallCommandNoCache_ptb {
-            get {
-                return ResourceManager.GetString("InstallCommandNoCache_ptb", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Отключает использование кэша компьютера в качестве первого источника пакетов..
-        /// </summary>
-        internal static string InstallCommandNoCache_rus {
-            get {
-                return ResourceManager.GetString("InstallCommandNoCache_rus", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Birinci paket kaynağı olarak makine önbelleğinin kullanılmasını devre dışı bırak..
-        /// </summary>
-        internal static string InstallCommandNoCache_trk {
-            get {
-                return ResourceManager.GetString("InstallCommandNoCache_trk", resourceCulture);
             }
         }
         
@@ -4362,123 +4128,6 @@ namespace NuGet.CommandLine {
         internal static string InstallCommandSolutionDirectory_trk {
             get {
                 return ResourceManager.GetString("InstallCommandSolutionDirectory_trk", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 要用于安装的程序包源列表。.
-        /// </summary>
-        internal static string InstallCommandSourceDescription_chs {
-            get {
-                return ResourceManager.GetString("InstallCommandSourceDescription_chs", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 要用來安裝的封裝來源清單。.
-        /// </summary>
-        internal static string InstallCommandSourceDescription_cht {
-            get {
-                return ResourceManager.GetString("InstallCommandSourceDescription_cht", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Seznam zdrojů balíčků pro použití při instalaci.
-        /// </summary>
-        internal static string InstallCommandSourceDescription_csy {
-            get {
-                return ResourceManager.GetString("InstallCommandSourceDescription_csy", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Eine Liste der Paketquellen, die für die Installation verwendet werden sollen..
-        /// </summary>
-        internal static string InstallCommandSourceDescription_deu {
-            get {
-                return ResourceManager.GetString("InstallCommandSourceDescription_deu", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Lista de orígenes de paquetes que se usa para la instalación..
-        /// </summary>
-        internal static string InstallCommandSourceDescription_esp {
-            get {
-                return ResourceManager.GetString("InstallCommandSourceDescription_esp", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Liste de sources de packages à utiliser pour l&apos;installation..
-        /// </summary>
-        internal static string InstallCommandSourceDescription_fra {
-            get {
-                return ResourceManager.GetString("InstallCommandSourceDescription_fra", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Lista di fonti pacchetto da usare per l&apos;installazione..
-        /// </summary>
-        internal static string InstallCommandSourceDescription_ita {
-            get {
-                return ResourceManager.GetString("InstallCommandSourceDescription_ita", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to インストールに使用するパッケージ ソースの一覧。.
-        /// </summary>
-        internal static string InstallCommandSourceDescription_jpn {
-            get {
-                return ResourceManager.GetString("InstallCommandSourceDescription_jpn", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 설치 시 사용되는 패키지 소스 목록입니다..
-        /// </summary>
-        internal static string InstallCommandSourceDescription_kor {
-            get {
-                return ResourceManager.GetString("InstallCommandSourceDescription_kor", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Lista źródeł pakietów do użycia podczas instalacji..
-        /// </summary>
-        internal static string InstallCommandSourceDescription_plk {
-            get {
-                return ResourceManager.GetString("InstallCommandSourceDescription_plk", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Uma lista de origens de pacotes para usar para a instalação..
-        /// </summary>
-        internal static string InstallCommandSourceDescription_ptb {
-            get {
-                return ResourceManager.GetString("InstallCommandSourceDescription_ptb", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Список источников пакетов, используемых для установки..
-        /// </summary>
-        internal static string InstallCommandSourceDescription_rus {
-            get {
-                return ResourceManager.GetString("InstallCommandSourceDescription_rus", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Yükleme için kullanılacak paketlerin listesi..
-        /// </summary>
-        internal static string InstallCommandSourceDescription_trk {
-            get {
-                return ResourceManager.GetString("InstallCommandSourceDescription_trk", resourceCulture);
             }
         }
         
@@ -10008,123 +9657,6 @@ namespace NuGet.CommandLine {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 禁止并行 nuget 程序包还原。.
-        /// </summary>
-        internal static string RestoreCommandDisableParallelProcessing_chs {
-            get {
-                return ResourceManager.GetString("RestoreCommandDisableParallelProcessing_chs", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 停用平行 nuget 封裝還原。.
-        /// </summary>
-        internal static string RestoreCommandDisableParallelProcessing_cht {
-            get {
-                return ResourceManager.GetString("RestoreCommandDisableParallelProcessing_cht", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Zakáže obnovení paralelních balíčků nuget..
-        /// </summary>
-        internal static string RestoreCommandDisableParallelProcessing_csy {
-            get {
-                return ResourceManager.GetString("RestoreCommandDisableParallelProcessing_csy", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Parallele nuget-Paketwiederherstllungen deaktivieren..
-        /// </summary>
-        internal static string RestoreCommandDisableParallelProcessing_deu {
-            get {
-                return ResourceManager.GetString("RestoreCommandDisableParallelProcessing_deu", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Deshabilitar las restauraciones del paquete nuget en paralelo..
-        /// </summary>
-        internal static string RestoreCommandDisableParallelProcessing_esp {
-            get {
-                return ResourceManager.GetString("RestoreCommandDisableParallelProcessing_esp", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Désactivez les restaurations du package nuget parallèle..
-        /// </summary>
-        internal static string RestoreCommandDisableParallelProcessing_fra {
-            get {
-                return ResourceManager.GetString("RestoreCommandDisableParallelProcessing_fra", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Disailita  il ripristino parallel nuget package..
-        /// </summary>
-        internal static string RestoreCommandDisableParallelProcessing_ita {
-            get {
-                return ResourceManager.GetString("RestoreCommandDisableParallelProcessing_ita", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to nuget パッケージの並列復元を無効にします。.
-        /// </summary>
-        internal static string RestoreCommandDisableParallelProcessing_jpn {
-            get {
-                return ResourceManager.GetString("RestoreCommandDisableParallelProcessing_jpn", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 병렬 nuget 패키지 복원을 사용하지 않도록 설정합니다..
-        /// </summary>
-        internal static string RestoreCommandDisableParallelProcessing_kor {
-            get {
-                return ResourceManager.GetString("RestoreCommandDisableParallelProcessing_kor", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Wyłącz równoległe przywracanie pakietów NuGet..
-        /// </summary>
-        internal static string RestoreCommandDisableParallelProcessing_plk {
-            get {
-                return ResourceManager.GetString("RestoreCommandDisableParallelProcessing_plk", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Desative as restaurações do pacote nuget paralelo..
-        /// </summary>
-        internal static string RestoreCommandDisableParallelProcessing_ptb {
-            get {
-                return ResourceManager.GetString("RestoreCommandDisableParallelProcessing_ptb", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Отключает параллельное восстановление пакетов NuGet..
-        /// </summary>
-        internal static string RestoreCommandDisableParallelProcessing_rus {
-            get {
-                return ResourceManager.GetString("RestoreCommandDisableParallelProcessing_rus", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Paralel nuget paketi geri yüklemelerini devre dışı bırak..
-        /// </summary>
-        internal static string RestoreCommandDisableParallelProcessing_trk {
-            get {
-                return ResourceManager.GetString("RestoreCommandDisableParallelProcessing_trk", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Forces restore to reevaluate all dependencies even if a lock file already exists..
         /// </summary>
         internal static string RestoreCommandForceEvaluate {
@@ -10148,123 +9680,6 @@ namespace NuGet.CommandLine {
         internal static string RestoreCommandLockFilePath {
             get {
                 return ResourceManager.GetString("RestoreCommandLockFilePath", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 禁止使用计算机缓存作为第一个程序包源。.
-        /// </summary>
-        internal static string RestoreCommandNoCache_chs {
-            get {
-                return ResourceManager.GetString("RestoreCommandNoCache_chs", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 停用使用機器快取做為第一個封裝來源。.
-        /// </summary>
-        internal static string RestoreCommandNoCache_cht {
-            get {
-                return ResourceManager.GetString("RestoreCommandNoCache_cht", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Zakáže použití mezipaměti počítače jako prvního zdroje balíčků..
-        /// </summary>
-        internal static string RestoreCommandNoCache_csy {
-            get {
-                return ResourceManager.GetString("RestoreCommandNoCache_csy", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Verwendung des Computercaches als erste Paketquelle deaktivieren..
-        /// </summary>
-        internal static string RestoreCommandNoCache_deu {
-            get {
-                return ResourceManager.GetString("RestoreCommandNoCache_deu", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Deshabilitar el uso del caché de máquina como origen del primer paquete..
-        /// </summary>
-        internal static string RestoreCommandNoCache_esp {
-            get {
-                return ResourceManager.GetString("RestoreCommandNoCache_esp", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Désactivation grâce au cache de l&apos;ordinateur, agissant comme première source du package..
-        /// </summary>
-        internal static string RestoreCommandNoCache_fra {
-            get {
-                return ResourceManager.GetString("RestoreCommandNoCache_fra", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Disablita usando la cache della macchina come prima fonte del pacchetto..
-        /// </summary>
-        internal static string RestoreCommandNoCache_ita {
-            get {
-                return ResourceManager.GetString("RestoreCommandNoCache_ita", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 最初のパッケージ ソースとしてのコンピューター キャッシュの使用を無効にします。.
-        /// </summary>
-        internal static string RestoreCommandNoCache_jpn {
-            get {
-                return ResourceManager.GetString("RestoreCommandNoCache_jpn", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 시스템 캐시를 첫 번째 패키지 소스로 사용하지 않도록 설정합니다..
-        /// </summary>
-        internal static string RestoreCommandNoCache_kor {
-            get {
-                return ResourceManager.GetString("RestoreCommandNoCache_kor", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Wyłącz, używając pamięci podręcznej komputera jako pierwszego źródła pakietu..
-        /// </summary>
-        internal static string RestoreCommandNoCache_plk {
-            get {
-                return ResourceManager.GetString("RestoreCommandNoCache_plk", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Desative usando o cache da máquina como a primeira origem de pacotes..
-        /// </summary>
-        internal static string RestoreCommandNoCache_ptb {
-            get {
-                return ResourceManager.GetString("RestoreCommandNoCache_ptb", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Отключает использование кэша компьютера в качестве первого источника пакетов..
-        /// </summary>
-        internal static string RestoreCommandNoCache_rus {
-            get {
-                return ResourceManager.GetString("RestoreCommandNoCache_rus", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Birinci paket kaynağı olarak makine önbelleğinin kullanılmasını devre dışı bırak..
-        /// </summary>
-        internal static string RestoreCommandNoCache_trk {
-            get {
-                return ResourceManager.GetString("RestoreCommandNoCache_trk", resourceCulture);
             }
         }
         
@@ -10665,123 +10080,6 @@ namespace NuGet.CommandLine {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 要使用的程序包源的列表。.
-        /// </summary>
-        internal static string RestoreCommandSourceDescription_chs {
-            get {
-                return ResourceManager.GetString("RestoreCommandSourceDescription_chs", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 要使用的封裝來源清單。.
-        /// </summary>
-        internal static string RestoreCommandSourceDescription_cht {
-            get {
-                return ResourceManager.GetString("RestoreCommandSourceDescription_cht", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Seznam zdrojů balíčků k použití.
-        /// </summary>
-        internal static string RestoreCommandSourceDescription_csy {
-            get {
-                return ResourceManager.GetString("RestoreCommandSourceDescription_csy", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Eine Liste der zu verwendenden Paketquellen..
-        /// </summary>
-        internal static string RestoreCommandSourceDescription_deu {
-            get {
-                return ResourceManager.GetString("RestoreCommandSourceDescription_deu", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Una lista de orígenes de paquetes para usar..
-        /// </summary>
-        internal static string RestoreCommandSourceDescription_esp {
-            get {
-                return ResourceManager.GetString("RestoreCommandSourceDescription_esp", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Liste de sources de packages à utiliser..
-        /// </summary>
-        internal static string RestoreCommandSourceDescription_fra {
-            get {
-                return ResourceManager.GetString("RestoreCommandSourceDescription_fra", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Lista di fonti pacchetti da usare..
-        /// </summary>
-        internal static string RestoreCommandSourceDescription_ita {
-            get {
-                return ResourceManager.GetString("RestoreCommandSourceDescription_ita", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 使用するパッケージ ソースの一覧。.
-        /// </summary>
-        internal static string RestoreCommandSourceDescription_jpn {
-            get {
-                return ResourceManager.GetString("RestoreCommandSourceDescription_jpn", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 사용할 패키지 소스의 목록입니다..
-        /// </summary>
-        internal static string RestoreCommandSourceDescription_kor {
-            get {
-                return ResourceManager.GetString("RestoreCommandSourceDescription_kor", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Lista źródeł pakietów dostępnych do użycia..
-        /// </summary>
-        internal static string RestoreCommandSourceDescription_plk {
-            get {
-                return ResourceManager.GetString("RestoreCommandSourceDescription_plk", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Uma lista de origens de pacotes a serem usados..
-        /// </summary>
-        internal static string RestoreCommandSourceDescription_ptb {
-            get {
-                return ResourceManager.GetString("RestoreCommandSourceDescription_ptb", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Список используемых источников пакетов..
-        /// </summary>
-        internal static string RestoreCommandSourceDescription_rus {
-            get {
-                return ResourceManager.GetString("RestoreCommandSourceDescription_rus", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Kullanılacak paket kaynaklarının listesi..
-        /// </summary>
-        internal static string RestoreCommandSourceDescription_trk {
-            get {
-                return ResourceManager.GetString("RestoreCommandSourceDescription_trk", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to If a solution is specified, this command restores NuGet packages that are installed in the solution and in projects contained in the solution. Otherwise, the command restores packages listed in the specified packages.config file, Microsoft Build project, or project.json file..
         /// </summary>
         internal static string RestoreCommandUsageDescription {
@@ -11048,6 +10346,73 @@ namespace NuGet.CommandLine {
         internal static string RestoreCommandUseLockFile {
             get {
                 return ResourceManager.GetString("RestoreCommandUseLockFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Searches a given source using the query string provided. If no sources are specified, all sources defined in %AppData%\NuGet\NuGet.config are used..
+        /// </summary>
+        internal static string SearchCommandDescription {
+            get {
+                return ResourceManager.GetString("SearchCommandDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Include prerelease packages..
+        /// </summary>
+        internal static string SearchCommandPreRelease {
+            get {
+                return ResourceManager.GetString("SearchCommandPreRelease", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The package source to search. You can pass multiple -Source options to search multiple package sources..
+        /// </summary>
+        internal static string SearchCommandSourceDescription {
+            get {
+                return ResourceManager.GetString("SearchCommandSourceDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The number of results to return. The default value is 20..
+        /// </summary>
+        internal static string SearchCommandTake {
+            get {
+                return ResourceManager.GetString("SearchCommandTake", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Specify search terms..
+        /// </summary>
+        internal static string SearchCommandUsageDescription {
+            get {
+                return ResourceManager.GetString("SearchCommandUsageDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to nuget search foo
+        ///
+        ///nuget search foo -Verbosity detailed
+        ///
+        ///nuget search foo -PreRelease -Take 5.
+        /// </summary>
+        internal static string SearchCommandUsageExamples {
+            get {
+                return ResourceManager.GetString("SearchCommandUsageExamples", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [search terms] [options].
+        /// </summary>
+        internal static string SearchCommandUsageSummary {
+            get {
+                return ResourceManager.GetString("SearchCommandUsageSummary", resourceCulture);
             }
         }
         
@@ -12819,7 +12184,7 @@ namespace NuGet.CommandLine {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to UserName to be used when connecting to an authenticated source..
+        ///   Looks up a localized string similar to Username to be used when connecting to an authenticated source..
         /// </summary>
         internal static string SourcesCommandUserNameDescription {
             get {
@@ -13756,6 +13121,7 @@ namespace NuGet.CommandLine {
                 return ResourceManager.GetString("TrustedSignersCommandUsageSummary", resourceCulture);
             }
         }
+        
         /// <summary>
         ///   Looks up a localized string similar to Overrides the default dependency resolution behavior..
         /// </summary>
@@ -13764,6 +13130,7 @@ namespace NuGet.CommandLine {
                 return ResourceManager.GetString("UpdateCommandDependencyVersion", resourceCulture);
             }
         }
+        
         /// <summary>
         ///   Looks up a localized string similar to Update packages to latest available versions. This command also updates NuGet.exe itself..
         /// </summary>
