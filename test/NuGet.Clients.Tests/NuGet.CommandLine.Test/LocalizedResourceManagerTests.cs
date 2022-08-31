@@ -83,7 +83,6 @@ namespace NuGet.CommandLine.Test
         [InlineData("it", "it-it")] // Italian, Italy
         [InlineData("it", "it-ch")] // Italian, Switzerland
         [InlineData("pl", "pl-pl")] // Polish, Poland
-        [InlineData("ru", "ru-by")] // Russian, Belarus
         [InlineData("tr", "tr-tr")] // Turkish, Turkey
         [InlineData("tr", "tr")] // Turkish
         public void GetNeutralCulture_SupportedLocales_ReturnsExpectedLocale(string expectedLocale, string initialLocale)
@@ -97,6 +96,7 @@ namespace NuGet.CommandLine.Test
         [InlineData("pt", "pt-pt")] // Portuguese, Portugal
         [InlineData("ja", "ja-jp")] // Japanese, Japan
         [InlineData("de", "de-be")] // Deutsch, Belgium
+        [InlineData("ru", "ru-by")] // Russian, Belarus
         public void GetNeutralCulture_SupportedLocales_ReturnsExpectedLocaleInWindows(string expectedLocale, string initialLocale)
         {
             Assert.Equal(new CultureInfo(expectedLocale), LocalizedResourceManager.GetNeutralCulture(new CultureInfo(initialLocale)));
