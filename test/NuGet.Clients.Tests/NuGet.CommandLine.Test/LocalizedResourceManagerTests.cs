@@ -77,21 +77,27 @@ namespace NuGet.CommandLine.Test
         [InlineData("es", "es-hn")] // Spanish, Honduras
         [InlineData("es", "es-es")] // Spanish, Spain
         [InlineData("pt", "pt-Br")] // Portuguese, Brazil
-        [InlineData("pt", "pt-po")] // Portuguese, Portugal
         [InlineData("fr", "fr-fr")] // French, France
         [InlineData("fr", "fr-ca")] // French, Canada
-        [InlineData("cs", "cs-cs")] // Czech, Czech Republic
         [InlineData("de", "de-de")] // Deutsch, Germany
-        [InlineData("de", "de-be")] // Deutsch, Belgium
         [InlineData("it", "it-it")] // Italian, Italy
         [InlineData("it", "it-ch")] // Italian, Switzerland
-        [InlineData("ja", "ja-ja")] // Japanese, Japan
-        [InlineData("ko", "ko-ko")] // Korean, Republic of Korea
         [InlineData("pl", "pl-pl")] // Polish, Poland
         [InlineData("ru", "ru-by")] // Russian, Belarus
         [InlineData("tr", "tr-tr")] // Turkish, Turkey
         [InlineData("tr", "tr")] // Turkish
         public void GetNeutralCulture_SupportedLocales_ReturnsExpectedLocale(string expectedLocale, string initialLocale)
+        {
+            Assert.Equal(new CultureInfo(expectedLocale), LocalizedResourceManager.GetNeutralCulture(new CultureInfo(initialLocale)));
+        }
+
+        [SkipMonoTheoryAttribute]
+        [InlineData("cs", "cs-cs")] // Czech, Czech Republic
+        [InlineData("ko", "ko-kr")] // Korean, Republic of Korea
+        [InlineData("pt", "pt-pt")] // Portuguese, Portugal
+        [InlineData("ja", "ja-jp")] // Japanese, Japan
+        [InlineData("de", "de-be")] // Deutsch, Belgium
+        public void GetNeutralCulture_SupportedLocales_ReturnsExpectedLocaleInWindows(string expectedLocale, string initialLocale)
         {
             Assert.Equal(new CultureInfo(expectedLocale), LocalizedResourceManager.GetNeutralCulture(new CultureInfo(initialLocale)));
         }
